@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @topic.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @topic.body %>
+</p>
+
+<p>
+  <b>Published:</b>
+  <%= @topic.published %>
+</p>
+
+<p>
+  <b>Nickname:</b>
+  <%= @topic.nickname %>
+</p>
+
+<p>
+  <b>Comment count:</b>
+  <%= @topic.comment_count %>
+</p>
+
+<p>
+  <b>Visit count:</b>
+  <%= @topic.visit_count %>
+</p>
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>
