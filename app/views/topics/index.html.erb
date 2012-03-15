@@ -1,31 +1,20 @@
-<h1>Listing topics</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-    <th>Published</th>
-    <th>Nickname</th>
-    <th>Comment count</th>
-    <th>Visit count</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @topics.each do |topic| %>
-  <tr>
-    <td><%= topic.title %></td>
-    <td><%= topic.body %></td>
-    <td><%= topic.published %></td>
-    <td><%= topic.nickname %></td>
-    <td><%= topic.comment_count %></td>
-    <td><%= topic.visit_count %></td>
-    <td><%= link_to 'Show', topic %></td>
-    <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
-    <td><%= link_to 'Destroy', topic, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+<table class="table">
+  <thead>
+    <tr>
+      <th>主题</th>
+      <th>楼主</th>
+      <th>最后回复</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @topics.each do |topic| %>
+      <tr>
+        <td><%= link_to topic.title, topic %></td>
+        <td><%= topic.nickname %></td>
+        <td><%= topic.updated_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
 <br />
