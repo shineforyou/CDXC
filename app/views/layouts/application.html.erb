@@ -2,13 +2,32 @@
 <html>
 <head>
   <title>Cdxc</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "bootstrap.min.css" %>
+  <%= stylesheet_link_tag    "bootstrap-responsive.min.css" %>
+  <%= stylesheet_link_tag    "my-main.css" %>
+  <%= javascript_include_tag "bootstrap.min" %>
+  <%= javascript_include_tag "jquery-1.7.1.min" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="my-nav">
+  <div class="my-container">
+    <div class="my-body">
+      <div class="span8">
+        <span>城东新村</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="my-container">
+  <div class="my-body my-content">
+    <div class="span8">
+      <%= yield %>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

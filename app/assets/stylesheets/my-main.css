@@ -1,0 +1,8 @@
+body {font-size: 14px; font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Verdana, Arial, sans-serif; background-color: #fff; color: #777; line-height: 22px; margin: 0px;}
+
+.my-nav {height: 48px; background-image: url('../img/bg2.png'); background-repeat: repeat-x; margin-bottom: 10px;}
+
+.my-container {text-align: center;}
+.my-body {width: 760px; margin-left: auto; margin-right: auto; text-align: left;}
+
+.my-content {background-color: #fff;}
